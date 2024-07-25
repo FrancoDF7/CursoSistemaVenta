@@ -52,7 +52,6 @@ A continueación se especifica de forma detalla el proposito de cada modulo:
 
 
 
-Lista de Videos del Curso:
 
 [Video1]: https://www.youtube.com/watch?v=ezYDeaMivH8&list=PLx2nia7-PgoDk8pZ1YG8wtw5A8LH2kz96&index=1
 [Video2]: https://www.youtube.com/watch?v=G9guWqDiddo&list=PLx2nia7-PgoDk8pZ1YG8wtw5A8LH2kz96&index=2
