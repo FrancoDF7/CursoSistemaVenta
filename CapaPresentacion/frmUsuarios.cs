@@ -28,7 +28,7 @@ namespace CapaPresentacion
             #region Carga combobox cboestado
             cboestado.Items.Add(new OpcionCombo() { Valor = 1 , Texto = "Activo" });
             cboestado.Items.Add(new OpcionCombo() { Valor = 0, Texto = "No Activo" });
-            cboestado.DisplayMember = "Texto"; ;
+            cboestado.DisplayMember = "Texto"; //El texto que muestra el combobox
             cboestado.ValueMember = "Valor";
             cboestado.SelectedIndex = 0;
             #endregion
@@ -50,7 +50,7 @@ namespace CapaPresentacion
 
         private void btnguardar_Click(object sender, EventArgs e)
         {
-            //Carga datagridview con los valores correspondientes
+            //Carga datagridview con los valores correspondientes, el primer valor lleva "" ya que no posee un valor como tal porque es un boton
             dgvdata.Rows.Add(new object[] {"", txtid.Text, txtdocumento.Text, txtnombrecompleto.Text, txtcorreo.Text, txtclave.Text, 
             ((OpcionCombo)cborol.SelectedItem).Valor.ToString(),
             ((OpcionCombo)cborol.SelectedItem).Texto.ToString(),
@@ -59,7 +59,6 @@ namespace CapaPresentacion
             });
 
             Limpiar();
-
         }
 
 
@@ -75,10 +74,6 @@ namespace CapaPresentacion
             cboestado.SelectedIndex = 0;
         }
 
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
 
     }
 }

@@ -12,6 +12,7 @@ namespace CapaDatos
 {
     public class CD_Rol
     {
+        //Retorna una lista el id de los roles y su descripcion (ADMINISTRADOR y EMPLEADO).
         public List<Rol> Listar()
         {
             List<Rol> lista = new List<Rol>();
