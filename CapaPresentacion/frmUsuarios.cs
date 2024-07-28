@@ -46,6 +46,19 @@ namespace CapaPresentacion
             cborol.SelectedIndex = 0;
             #endregion
 
+
+            #region Carga el combobox cbobusqueda con los valores de la columnas del datagridview
+            foreach (DataGridViewColumn columna in dgvdata.Columns)
+            {
+                if (columna.Visible == true && columna.Name != "btnseleccionar")
+                {
+                    cbobusqueda.Items.Add(new OpcionCombo() { Valor = columna.Name, Texto = columna.HeaderText });
+                }
+            }
+            cbobusqueda.DisplayMember = "Texto";
+            cbobusqueda.ValueMember = "Valor";
+            cbobusqueda.SelectedIndex = 0;
+            #endregion
         }
 
         private void btnguardar_Click(object sender, EventArgs e)
