@@ -59,6 +59,24 @@ namespace CapaPresentacion
             cbobusqueda.ValueMember = "Valor";
             cbobusqueda.SelectedIndex = 0;
             #endregion
+
+
+            //MOSTRAR TODOS LOS USUARIOS
+            //Esta porcion de codigo carga el dgvdata desde la base de datos
+            //mediante el metodo listar de clase CN_Usuario.
+            #region Carga DataGridView dgvdata
+            List<Usuario> listaUsuario = new CN_Usuario().Listar();
+
+            foreach (Usuario item in listaUsuario)
+            {
+                dgvdata.Rows.Add(new object[] {"", item.IdUsuario, item.Documento, item.NombreCompleto, item.Correo, item.Clave,
+                item.oRol.IdRol,
+                item.oRol.Descripcion,
+                item.Estado == true ? 1 : 0,  //Si es true muestra 1 de lo contrario 0
+                item.Estado == true ? "Activo" : "No Activo"    //Si es true muestra Activo de lo contrario No Activo
+                });
+            }
+            #endregion
         }
 
         private void btnguardar_Click(object sender, EventArgs e)
