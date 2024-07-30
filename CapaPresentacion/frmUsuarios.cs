@@ -105,6 +105,28 @@ namespace CapaPresentacion
             cboestado.SelectedIndex = 0;
         }
 
+        //Este evento se dispara cada vez que se crea una nueva fila
+        //Dibuja la imagen de un check dentro del boton del dgvdata
+        private void dgvdata_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
+        {
+            if(e.RowIndex < 0) 
+                return;
+
+            if (e.ColumnIndex == 0)
+            {
+                e.Paint(e.CellBounds, DataGridViewPaintParts.All);
+
+                var w = Properties.Resources.check20.Width; //Asigna a la variable w el ancho de la imagen check20
+                var h = Properties.Resources.check20.Height; //Asigna a la variable h el alto de la imagen check20
+                var x = e.CellBounds.Left + (e.CellBounds.Width - w) / 2; //Centra imagen horizontalmente
+                var y = e.CellBounds.Top + (e.CellBounds.Height - h) / 2; //Centra imagen verticalmente
+
+
+                e.Graphics.DrawImage(Properties.Resources.check20, new Rectangle(x,y,w,h)); //Se dibuja la imagen en utilizando las dimensiones y coordenadas de las variables.
+                e.Handled = true; //Esto indica que se ha manejado completamente el evento de pintura de la celda y evita que el sistema realice más procesamiento de pintura estándar
+            }
+        }
+
 
     }
 }
