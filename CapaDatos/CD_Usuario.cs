@@ -25,10 +25,12 @@ namespace CapaDatos
                 try
                 {
                     //Consulta que se va realizar a la BD
-                    string query = "SELECT IdUsuario,Documento,NombreCompleto,Correo,Clave,Estado FROM USUARIO";
+                    StringBuilder query = new StringBuilder();
+                    query.AppendLine("SELECT u.IdUsuario, u.Documento, u.NombreCompleto, u.Correo, u.Clave, u.Estado, r.IdRol, r.Descripcion FROM USUARIO u");
+                    query.AppendLine("INNER JOIN ROL r ON r.IdRol = u.IdRol");
 
                     //Le pasa por parametros al SqlCommand el la Consulta y Cadena de Conexion
-                    SqlCommand cmd = new SqlCommand(query, oconexion);
+                    SqlCommand cmd = new SqlCommand(query.ToString(), oconexion);
                     cmd.CommandType = CommandType.Text;
 
                     oconexion.Open();
@@ -50,7 +52,8 @@ namespace CapaDatos
                                 NombreCompleto = dr["NombreCompleto"].ToString(),
                                 Correo = dr["Correo"].ToString(),
                                 Clave = dr["Clave"].ToString(),
-                                Estado = Convert.ToBoolean(dr["Estado"])
+                                Estado = Convert.ToBoolean(dr["Estado"]),
+                                oRol = new Rol() { IdRol = Convert.ToInt32(dr["IdRol"]), Descripcion = dr["Descripcion"].ToString() }
                             });
                         }
                     }

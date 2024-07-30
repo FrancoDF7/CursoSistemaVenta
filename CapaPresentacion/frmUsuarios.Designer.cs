@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -118,7 +118,7 @@
             // txtdocumento
             // 
             this.txtdocumento.Location = new System.Drawing.Point(31, 60);
-            this.txtdocumento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtdocumento.Margin = new System.Windows.Forms.Padding(2);
             this.txtdocumento.Name = "txtdocumento";
             this.txtdocumento.Size = new System.Drawing.Size(152, 20);
             this.txtdocumento.TabIndex = 4;
@@ -126,7 +126,7 @@
             // txtnombrecompleto
             // 
             this.txtnombrecompleto.Location = new System.Drawing.Point(31, 108);
-            this.txtnombrecompleto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtnombrecompleto.Margin = new System.Windows.Forms.Padding(2);
             this.txtnombrecompleto.Name = "txtnombrecompleto";
             this.txtnombrecompleto.Size = new System.Drawing.Size(152, 20);
             this.txtnombrecompleto.TabIndex = 5;
@@ -134,7 +134,7 @@
             // txtcorreo
             // 
             this.txtcorreo.Location = new System.Drawing.Point(31, 154);
-            this.txtcorreo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtcorreo.Margin = new System.Windows.Forms.Padding(2);
             this.txtcorreo.Name = "txtcorreo";
             this.txtcorreo.Size = new System.Drawing.Size(152, 20);
             this.txtcorreo.TabIndex = 6;
@@ -142,7 +142,7 @@
             // txtclave
             // 
             this.txtclave.Location = new System.Drawing.Point(31, 202);
-            this.txtclave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtclave.Margin = new System.Windows.Forms.Padding(2);
             this.txtclave.Name = "txtclave";
             this.txtclave.PasswordChar = '•';
             this.txtclave.Size = new System.Drawing.Size(152, 20);
@@ -162,7 +162,7 @@
             // txtconfirmarclave
             // 
             this.txtconfirmarclave.Location = new System.Drawing.Point(31, 251);
-            this.txtconfirmarclave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtconfirmarclave.Margin = new System.Windows.Forms.Padding(2);
             this.txtconfirmarclave.Name = "txtconfirmarclave";
             this.txtconfirmarclave.PasswordChar = '•';
             this.txtconfirmarclave.Size = new System.Drawing.Size(152, 20);
@@ -195,7 +195,7 @@
             this.cborol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cborol.FormattingEnabled = true;
             this.cborol.Location = new System.Drawing.Point(31, 295);
-            this.cborol.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cborol.Margin = new System.Windows.Forms.Padding(2);
             this.cborol.Name = "cborol";
             this.cborol.Size = new System.Drawing.Size(152, 21);
             this.cborol.TabIndex = 12;
@@ -205,7 +205,7 @@
             this.cboestado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboestado.FormattingEnabled = true;
             this.cboestado.Location = new System.Drawing.Point(31, 341);
-            this.cboestado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboestado.Margin = new System.Windows.Forms.Padding(2);
             this.cboestado.Name = "cboestado";
             this.cboestado.Size = new System.Drawing.Size(152, 21);
             this.cboestado.TabIndex = 13;
@@ -233,7 +233,7 @@
             this.btnguardar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnguardar.IconSize = 16;
             this.btnguardar.Location = new System.Drawing.Point(31, 381);
-            this.btnguardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnguardar.Margin = new System.Windows.Forms.Padding(2);
             this.btnguardar.Name = "btnguardar";
             this.btnguardar.Size = new System.Drawing.Size(152, 23);
             this.btnguardar.TabIndex = 15;
@@ -255,7 +255,7 @@
             this.btneditar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btneditar.IconSize = 16;
             this.btneditar.Location = new System.Drawing.Point(32, 409);
-            this.btneditar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btneditar.Margin = new System.Windows.Forms.Padding(2);
             this.btneditar.Name = "btneditar";
             this.btneditar.Size = new System.Drawing.Size(152, 23);
             this.btneditar.TabIndex = 16;
@@ -276,7 +276,7 @@
             this.btneliminar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btneliminar.IconSize = 16;
             this.btneliminar.Location = new System.Drawing.Point(32, 436);
-            this.btneliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btneliminar.Margin = new System.Windows.Forms.Padding(2);
             this.btneliminar.Name = "btneliminar";
             this.btneliminar.Size = new System.Drawing.Size(152, 23);
             this.btneliminar.TabIndex = 17;
@@ -300,15 +300,15 @@
             // dgvdata
             // 
             this.dgvdata.AllowUserToAddRows = false;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvdata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvdata.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnseleccionar,
@@ -322,14 +322,14 @@
             this.EstadoValor,
             this.Estado});
             this.dgvdata.Location = new System.Drawing.Point(248, 101);
-            this.dgvdata.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvdata.Margin = new System.Windows.Forms.Padding(2);
             this.dgvdata.MultiSelect = false;
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.ReadOnly = true;
             this.dgvdata.RowHeadersWidth = 51;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvdata.RowTemplate.Height = 28;
             this.dgvdata.Size = new System.Drawing.Size(700, 339);
             this.dgvdata.TabIndex = 19;
@@ -433,7 +433,7 @@
             // txtid
             // 
             this.txtid.Location = new System.Drawing.Point(157, 36);
-            this.txtid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtid.Margin = new System.Windows.Forms.Padding(2);
             this.txtid.Name = "txtid";
             this.txtid.Size = new System.Drawing.Size(26, 20);
             this.txtid.TabIndex = 21;
@@ -455,7 +455,7 @@
             this.cbobusqueda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbobusqueda.FormattingEnabled = true;
             this.cbobusqueda.Location = new System.Drawing.Point(548, 50);
-            this.cbobusqueda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbobusqueda.Margin = new System.Windows.Forms.Padding(2);
             this.cbobusqueda.Name = "cbobusqueda";
             this.cbobusqueda.Size = new System.Drawing.Size(118, 21);
             this.cbobusqueda.TabIndex = 23;
@@ -463,7 +463,7 @@
             // txtbusqueda
             // 
             this.txtbusqueda.Location = new System.Drawing.Point(690, 51);
-            this.txtbusqueda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtbusqueda.Margin = new System.Windows.Forms.Padding(2);
             this.txtbusqueda.Name = "txtbusqueda";
             this.txtbusqueda.Size = new System.Drawing.Size(133, 20);
             this.txtbusqueda.TabIndex = 24;
@@ -480,7 +480,7 @@
             this.btnlimpiar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnlimpiar.IconSize = 20;
             this.btnlimpiar.Location = new System.Drawing.Point(892, 47);
-            this.btnlimpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnlimpiar.Margin = new System.Windows.Forms.Padding(2);
             this.btnlimpiar.Name = "btnlimpiar";
             this.btnlimpiar.Size = new System.Drawing.Size(28, 23);
             this.btnlimpiar.TabIndex = 26;
@@ -499,7 +499,7 @@
             this.btnbuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnbuscar.IconSize = 20;
             this.btnbuscar.Location = new System.Drawing.Point(851, 47);
-            this.btnbuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnbuscar.Margin = new System.Windows.Forms.Padding(2);
             this.btnbuscar.Name = "btnbuscar";
             this.btnbuscar.Size = new System.Drawing.Size(28, 23);
             this.btnbuscar.TabIndex = 25;
@@ -539,7 +539,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmUsuarios";
             this.Text = "frmUsuarios";
             this.Load += new System.EventHandler(this.frmUsuarios_Load);
