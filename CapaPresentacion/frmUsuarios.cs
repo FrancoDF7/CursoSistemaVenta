@@ -95,6 +95,7 @@ namespace CapaPresentacion
 
         private void Limpiar()
         {
+            txtindice.Text = "-1";
             txtid.Text = "0";
             txtdocumento.Text = "";
             txtnombrecompleto.Text = "";
@@ -127,6 +128,49 @@ namespace CapaPresentacion
             }
         }
 
+        private void dgvdata_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //Valida que se haga click en la columna que se llama btnseleccionar en el dgvdata
+            if (dgvdata.Columns[e.ColumnIndex].Name == "btnseleccionar")
+            {
+                int indice = e.RowIndex; //Obtiene el indice de la fila seleccionda
 
+                if (indice >= 0)
+                {
+                    txtindice.Text = indice.ToString();
+                    txtid.Text = dgvdata.Rows[indice].Cells["Id"].Value.ToString();
+                    txtdocumento.Text = dgvdata.Rows[indice].Cells["Documento"].Value.ToString();
+                    txtnombrecompleto.Text = dgvdata.Rows[indice].Cells["NombreCompleto"].Value.ToString();
+                    txtcorreo.Text = dgvdata.Rows[indice].Cells["Correo"].Value.ToString();
+                    txtclave.Text = dgvdata.Rows[indice].Cells["Clave"].Value.ToString();
+                    txtconfirmarclave.Text = dgvdata.Rows[indice].Cells["Clave"].Value.ToString();
+
+                    //Muestra en el combobox cborol el rol que le corresponda al usuario que se selecciono
+                    foreach (OpcionCombo oc in cborol.Items)
+                    {
+                        //Valida que valor del combo sea el mismo que el de rol del usuario
+                        if (Convert.ToInt32(oc.Valor) == Convert.ToInt32(dgvdata.Rows[indice].Cells["IdRol"].Value))
+                        {
+                            int indice_combo = cborol.Items.IndexOf(oc);
+                            cborol.SelectedIndex = indice_combo;
+                            break;
+                        }
+                    }
+
+                    //Muestra en el combobox cboestado el estado que le corresponda al usuario que se selecciono
+                    foreach (OpcionCombo oc in cboestado.Items)
+                    {
+                        //Valida que valor del combo sea el mismo que el de estado del usuario
+                        if (Convert.ToInt32(oc.Valor) == Convert.ToInt32(dgvdata.Rows[indice].Cells["EstadoValor"].Value))
+                        {
+                            int indice_combo = cboestado.Items.IndexOf(oc);
+                            cboestado.SelectedIndex = indice_combo;
+                            break;
+                        }
+                    }
+
+                }
+            }
+        }
     }
 }
