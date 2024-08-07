@@ -81,15 +81,15 @@ namespace CapaPresentacion
 
         private void btnguardar_Click(object sender, EventArgs e)
         {
-            //Carga datagridview con los valores correspondientes, el primer valor lleva "" ya que no posee un valor como tal porque es un boton
-            dgvdata.Rows.Add(new object[] {"", txtid.Text, txtdocumento.Text, txtnombrecompleto.Text, txtcorreo.Text, txtclave.Text, 
-            ((OpcionCombo)cborol.SelectedItem).Valor.ToString(),
-            ((OpcionCombo)cborol.SelectedItem).Texto.ToString(),
-            ((OpcionCombo)cboestado.SelectedItem).Valor.ToString(),
-            ((OpcionCombo)cboestado.SelectedItem).Texto.ToString(),
-            });
+            ////Carga datagridview con los valores correspondientes, el primer valor lleva "" ya que no posee un valor como tal porque es un boton
+            //dgvdata.Rows.Add(new object[] {"", txtid.Text, txtdocumento.Text, txtnombrecompleto.Text, txtcorreo.Text, txtclave.Text, 
+            //((OpcionCombo)cborol.SelectedItem).Valor.ToString(),
+            //((OpcionCombo)cborol.SelectedItem).Texto.ToString(),
+            //((OpcionCombo)cboestado.SelectedItem).Valor.ToString(),
+            //((OpcionCombo)cboestado.SelectedItem).Texto.ToString(),
+            //});
 
-            Limpiar();
+            //Limpiar();
         }
 
 
@@ -128,6 +128,7 @@ namespace CapaPresentacion
             }
         }
 
+        //Se encarga de completar los campos de texto y combobox, obteniendo los datos de dgvdata.
         private void dgvdata_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             //Valida que se haga click en la columna que se llama btnseleccionar en el dgvdata
