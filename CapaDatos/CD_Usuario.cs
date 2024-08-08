@@ -107,6 +107,43 @@ namespace CapaDatos
         }
 
 
+        public bool Editar(Usuario obj, out string Mensaje)
+        {
+            bool respuesta = false;
+            Mensaje = string.Empty;
+
+            try
+            {
+                using (SqlConnection oconexion = new SqlConnection(Conexion.cadena))
+                {
+                    SqlCommand cmd = new SqlCommand("SP_EDITARUSUARIO", oconexion);
+                    cmd.Parameters.AddWithValue("IdUsuario", obj.IdUsuario);
+                    cmd.Parameters.AddWithValue("Documento", obj.Documento);
+                    cmd.Parameters.AddWithValue("NombreCompleto", obj.NombreCompleto);
+                    cmd.Parameters.AddWithValue("Correo", obj.Correo);
+                    cmd.Parameters.AddWithValue("Clave", obj.Clave);
+                    cmd.Parameters.AddWithValue("IdRol", obj.oRol.IdRol);
+                    cmd.Parameters.AddWithValue("Estado", obj.Estado);
+                    cmd.Parameters.Add("Respuesta", SqlDbType.Int).Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add("Mensaje", SqlDbType.VarChar).Direction = ParameterDirection.Output;
+
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.ExecuteNonQuery();
+
+                    respuesta = Convert.ToBoolean(cmd.Parameters["Respuesta"].Value);
+                    Mensaje = cmd.Parameters["Mensaje"].Value.ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                respuesta = false;
+                Mensaje = ex.Message;
+            }
+
+
+            return respuesta;
+        }
 
     }
 }
