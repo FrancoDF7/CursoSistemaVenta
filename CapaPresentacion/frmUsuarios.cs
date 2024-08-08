@@ -81,15 +81,39 @@ namespace CapaPresentacion
 
         private void btnguardar_Click(object sender, EventArgs e)
         {
-            ////Carga datagridview con los valores correspondientes, el primer valor lleva "" ya que no posee un valor como tal porque es un boton
-            //dgvdata.Rows.Add(new object[] {"", txtid.Text, txtdocumento.Text, txtnombrecompleto.Text, txtcorreo.Text, txtclave.Text, 
-            //((OpcionCombo)cborol.SelectedItem).Valor.ToString(),
-            //((OpcionCombo)cborol.SelectedItem).Texto.ToString(),
-            //((OpcionCombo)cboestado.SelectedItem).Valor.ToString(),
-            //((OpcionCombo)cboestado.SelectedItem).Texto.ToString(),
-            //});
+            string mensaje = string.Empty;
 
-            //Limpiar();
+            Usuario objusuario = new Usuario()
+            {
+                IdUsuario = Convert.ToInt32(txtid.Text),
+                Documento = txtdocumento.Text,
+                NombreCompleto = txtnombrecompleto.Text,
+                Correo = txtcorreo.Text,
+                Clave = txtclave.Text,
+                oRol = new Rol() { IdRol = Convert.ToInt32(((OpcionCombo)cborol.SelectedItem).Valor) },
+                Estado = Convert.ToInt32(((OpcionCombo)cboestado.SelectedItem).Valor) == 1 ? true : false
+            };
+
+            int idusuariogenerado = new CN_Usuario().Registrar(objusuario, out mensaje);
+
+            //Si el idusuariogenerado es distinto de 0 significa que se registro correctamente el usuario
+            if (idusuariogenerado != 0)
+            {
+                //Carga datagridview con los datos del nuevo usuario, el primer valor lleva "" ya que no posee un valor como tal porque es un botón
+                dgvdata.Rows.Add(new object[] {"", idusuariogenerado, txtdocumento.Text, txtnombrecompleto.Text, txtcorreo.Text, txtclave.Text,
+                ((OpcionCombo)cborol.SelectedItem).Valor.ToString(),
+                ((OpcionCombo)cborol.SelectedItem).Texto.ToString(),
+                ((OpcionCombo)cboestado.SelectedItem).Valor.ToString(),
+                ((OpcionCombo)cboestado.SelectedItem).Texto.ToString(),
+                });
+
+                Limpiar();
+            }
+            else
+            {
+                MessageBox.Show(mensaje);
+            }
+
         }
 
 
