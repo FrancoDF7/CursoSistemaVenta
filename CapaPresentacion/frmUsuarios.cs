@@ -250,10 +250,10 @@ namespace CapaPresentacion
                     };
 
                     bool respuesta = new CN_Usuario().Eliminar(objusuario, out mensaje);
-
-
+                    
                     if(respuesta == true)
                     {
+                        //Elimina la fila que le correspondia al usuario eliminado
                         dgvdata.Rows.RemoveAt(Convert.ToInt32(txtindice.Text));
                     }
                     else
@@ -265,7 +265,30 @@ namespace CapaPresentacion
             }
         }
 
+        private void btnbuscar_Click(object sender, EventArgs e)
+        {
+            string columnaFiltro = ((OpcionCombo)cbobusqueda.SelectedItem).Valor.ToString();
 
+            if(dgvdata.Rows.Count > 0 )
+            {
+                foreach (DataGridViewRow row in dgvdata.Rows)
+                {
+                    if (row.Cells[columnaFiltro].Value.ToString().Trim().ToUpper().Contains(txtbusqueda.Text.Trim().ToUpper()))
+                        row.Visible = true;                    
+                    else                    
+                        row.Visible = false;
+                    
+                }
+            }
+        }
 
+        private void btnlimpiarbuscador_Click(object sender, EventArgs e)
+        {
+            txtbusqueda.Text = "";
+            foreach (DataGridViewRow row in dgvdata.Rows)
+            {
+                row.Visible = true;
+            }
+        }
     }
 }
