@@ -94,24 +94,58 @@ namespace CapaPresentacion
                 Estado = Convert.ToInt32(((OpcionCombo)cboestado.SelectedItem).Valor) == 1 ? true : false
             };
 
-            int idusuariogenerado = new CN_Usuario().Registrar(objusuario, out mensaje);
-
-            //Si el idusuariogenerado es distinto de 0 significa que se registro correctamente el usuario
-            if (idusuariogenerado != 0)
+            //Si el IdUsuario es igual a 0 significa que se esta creando un nuevo usuario,
+            //de lo contrario signific que se esta editando un usuario existente.
+            if (objusuario.IdUsuario == 0)
             {
-                //Carga datagridview con los datos del nuevo usuario, el primer valor lleva "" ya que no posee un valor como tal porque es un botón
-                dgvdata.Rows.Add(new object[] {"", idusuariogenerado, txtdocumento.Text, txtnombrecompleto.Text, txtcorreo.Text, txtclave.Text,
+                int idusuariogenerado = new CN_Usuario().Registrar(objusuario, out mensaje);
+
+                //Si el idusuariogenerado es distinto de 0 significa que se registro correctamente el usuario
+                if (idusuariogenerado != 0)
+                {
+                    //Carga datagridview con los datos del nuevo usuario, el primer valor lleva "" ya que no posee un valor como tal porque es un botón
+                    dgvdata.Rows.Add(new object[] {"", idusuariogenerado, txtdocumento.Text, txtnombrecompleto.Text, txtcorreo.Text, txtclave.Text,
                 ((OpcionCombo)cborol.SelectedItem).Valor.ToString(),
                 ((OpcionCombo)cborol.SelectedItem).Texto.ToString(),
                 ((OpcionCombo)cboestado.SelectedItem).Valor.ToString(),
                 ((OpcionCombo)cboestado.SelectedItem).Texto.ToString(),
                 });
 
-                Limpiar();
+                    Limpiar();
+                }
+                else
+                {
+                    MessageBox.Show(mensaje);
+                }
             }
             else
             {
-                MessageBox.Show(mensaje);
+                //Editar usuario en la base de datos
+                bool resultado = new CN_Usuario().Editar(objusuario, out mensaje);
+
+                //Actualiza el dgvdata la fila que corresponda con los nuevos valores del usuario que se edito
+                if(resultado == true)
+                {
+                    //Se almacena en la variable row el indice de la fila seleccionada
+                    DataGridViewRow row = dgvdata.Rows[Convert.ToInt32(txtindice.Text)];
+
+                    row.Cells["Id"].Value = txtid.Text;
+                    row.Cells["Documento"].Value = txtdocumento.Text;
+                    row.Cells["NombreCompleto"].Value = txtnombrecompleto.Text;
+                    row.Cells["Correo"].Value = txtcorreo.Text;
+                    row.Cells["Clave"].Value = txtclave.Text;
+                    row.Cells["IdRol"].Value = ((OpcionCombo)cborol.SelectedItem).Valor.ToString();
+                    row.Cells["Rol"].Value = ((OpcionCombo)cborol.SelectedItem).Texto.ToString();
+                    row.Cells["EstadoValor"].Value = ((OpcionCombo)cboestado.SelectedItem).Valor.ToString();
+                    row.Cells["Estado"].Value = ((OpcionCombo)cboestado.SelectedItem).Texto.ToString();
+
+                    Limpiar();
+                }
+                else
+                {
+                    MessageBox.Show(mensaje);
+                }
+
             }
 
         }
@@ -128,6 +162,8 @@ namespace CapaPresentacion
             txtconfirmarclave.Text = "";
             cborol.SelectedIndex = 0;
             cboestado.SelectedIndex = 0;
+
+            txtdocumento.Select();
         }
 
         //Este evento se dispara cada vez que se crea una nueva fila
