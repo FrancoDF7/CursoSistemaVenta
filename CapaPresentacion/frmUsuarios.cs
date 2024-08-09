@@ -233,5 +233,39 @@ namespace CapaPresentacion
                 }
             }
         }
+
+        private void btneliminar_Click(object sender, EventArgs e)
+        {
+            //Valida que se selecciono un usuario del dgvdata
+            if(Convert.ToInt32(txtid.Text) != 0)
+            {
+                //Si se hace click en boton de SI procede a eliminar el usuario
+                if(MessageBox.Show("¿Desea eliminar el usuario?","Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    string mensaje = string.Empty;
+
+                    Usuario objusuario = new Usuario()
+                    {
+                        IdUsuario = Convert.ToInt32(txtid.Text)
+                    };
+
+                    bool respuesta = new CN_Usuario().Eliminar(objusuario, out mensaje);
+
+
+                    if(respuesta == true)
+                    {
+                        dgvdata.Rows.RemoveAt(Convert.ToInt32(txtindice.Text));
+                    }
+                    else
+                    {
+                        MessageBox.Show(mensaje, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+
+                }
+            }
+        }
+
+
+
     }
 }
