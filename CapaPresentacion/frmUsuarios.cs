@@ -265,6 +265,11 @@ namespace CapaPresentacion
             }
         }
 
+        private void btnlimpiar_Click(object sender, EventArgs e)
+        {
+            Limpiar();
+        }
+
         private void btnbuscar_Click(object sender, EventArgs e)
         {
             string columnaFiltro = ((OpcionCombo)cbobusqueda.SelectedItem).Valor.ToString();
@@ -290,5 +295,7 @@ namespace CapaPresentacion
                 row.Visible = true;
             }
         }
+
+
     }
 }
