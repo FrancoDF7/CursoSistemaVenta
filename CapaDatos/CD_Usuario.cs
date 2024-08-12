@@ -86,6 +86,7 @@ namespace CapaDatos
                     cmd.Parameters.AddWithValue("Clave", obj.Clave);
                     cmd.Parameters.AddWithValue("IdRol", obj.oRol.IdRol);
                     cmd.Parameters.AddWithValue("Estado", obj.Estado);
+                    //Parametros de Salida
                     cmd.Parameters.Add("IdUsuarioResultado", SqlDbType.Int).Direction = ParameterDirection.Output;
                     cmd.Parameters.Add("Mensaje", SqlDbType.VarChar,500).Direction = ParameterDirection.Output; //Se debe pasar por parametros el tamaño del tipo de dato de sql, en este caso varchar(500)
 

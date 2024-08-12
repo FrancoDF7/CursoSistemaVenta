@@ -67,7 +67,7 @@
             this.menu.Location = new System.Drawing.Point(0, 53);
             this.menu.Name = "menu";
             this.menu.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menu.Size = new System.Drawing.Size(935, 73);
+            this.menu.Size = new System.Drawing.Size(1099, 73);
             this.menu.TabIndex = 0;
             this.menu.Text = "menuStrip1";
             // 
@@ -107,7 +107,7 @@
             this.submenucategoria.IconColor = System.Drawing.Color.Black;
             this.submenucategoria.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenucategoria.Name = "submenucategoria";
-            this.submenucategoria.Size = new System.Drawing.Size(184, 26);
+            this.submenucategoria.Size = new System.Drawing.Size(125, 22);
             this.submenucategoria.Text = "Categoría";
             this.submenucategoria.Click += new System.EventHandler(this.submenucategoria_Click);
             // 
@@ -117,7 +117,7 @@
             this.submenuproducto.IconColor = System.Drawing.Color.Black;
             this.submenuproducto.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenuproducto.Name = "submenuproducto";
-            this.submenuproducto.Size = new System.Drawing.Size(184, 26);
+            this.submenuproducto.Size = new System.Drawing.Size(125, 22);
             this.submenuproducto.Text = "Producto";
             this.submenuproducto.Click += new System.EventHandler(this.submenuproducto_Click);
             // 
@@ -257,7 +257,7 @@
             this.menutitulo.Name = "menutitulo";
             this.menutitulo.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
             this.menutitulo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menutitulo.Size = new System.Drawing.Size(935, 53);
+            this.menutitulo.Size = new System.Drawing.Size(1099, 53);
             this.menutitulo.TabIndex = 1;
             this.menutitulo.Text = "menuStrip2";
             // 
@@ -278,9 +278,9 @@
             // 
             this.contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.contenedor.Location = new System.Drawing.Point(0, 126);
-            this.contenedor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.contenedor.Margin = new System.Windows.Forms.Padding(2);
             this.contenedor.Name = "contenedor";
-            this.contenedor.Size = new System.Drawing.Size(935, 474);
+            this.contenedor.Size = new System.Drawing.Size(1099, 474);
             this.contenedor.TabIndex = 3;
             // 
             // label2
@@ -313,7 +313,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(935, 600);
+            this.ClientSize = new System.Drawing.Size(1099, 600);
             this.Controls.Add(this.lblusuario);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.contenedor);
@@ -321,7 +321,7 @@
             this.Controls.Add(this.menu);
             this.Controls.Add(this.menutitulo);
             this.MainMenuStrip = this.menu;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Inicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
