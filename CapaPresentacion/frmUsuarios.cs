@@ -255,6 +255,7 @@ namespace CapaPresentacion
                     {
                         //Elimina la fila que le correspondia al usuario eliminado
                         dgvdata.Rows.RemoveAt(Convert.ToInt32(txtindice.Text));
+                        Limpiar();
                     }
                     else
                     {
