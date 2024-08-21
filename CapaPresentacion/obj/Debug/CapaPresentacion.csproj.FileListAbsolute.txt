@@ -45,3 +45,4 @@ C:\Proyectos VS 2022\CursoSistemaVenta\CapaPresentacion\bin\Debug\System.IO.Pack
 C:\Proyectos VS 2022\CursoSistemaVenta\CapaPresentacion\bin\Debug\System.Memory.xml
 C:\Proyectos VS 2022\CursoSistemaVenta\CapaPresentacion\bin\Debug\System.Numerics.Vectors.xml
 C:\Proyectos VS 2022\CursoSistemaVenta\CapaPresentacion\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Proyectos VS 2022\CursoSistemaVenta\CapaPresentacion\obj\Debug\CapaPresentacion.frmNegocio.resources
