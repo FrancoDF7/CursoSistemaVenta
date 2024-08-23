@@ -34,9 +34,6 @@ namespace CapaPresentacion
 
         private void btningresar_Click(object sender, EventArgs e)
          {
-            //Linea de codigo de prueba para ver que devuelva la lista completa de usuarios.
-            //List<Usuario> TEST = new CN_Usuario().Listar();
-
             //El metodo Listar devuelve una lista de usuarios.
             //Where filtra un usuario de la lista que coincida con el numero de documento y su clave, de lo contrario devuelve null.
             Usuario ousuario = new CN_Usuario().Listar().Where(u => u.Documento == txtdocumento.Text && u.Clave == txtclave.Text).FirstOrDefault();

@@ -32,7 +32,7 @@ namespace CapaPresentacion
             #endregion
 
 
-            #region Carga combobox cborol desde la base de datos
+            #region Carga combobox cbocategoria desde la base de datos
             List<Categoria> listaCategoria = new CN_Categoria().Listar();
 
             foreach (Categoria item in listaCategoria)
