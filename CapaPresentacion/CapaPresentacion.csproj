@@ -302,5 +302,8 @@
   <ItemGroup>
     <None Include="Resources\file-type-excel.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash_bin20_25.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

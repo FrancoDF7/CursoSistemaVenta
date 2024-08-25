@@ -14,6 +14,9 @@ namespace CapaPresentacion
         [STAThread]
         static void Main()
         {
+            //Cambia la configuracion de la aplicacion segun el pais
+            System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("es-PE");
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Inicio());
