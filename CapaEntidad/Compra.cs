@@ -10,7 +10,7 @@ namespace CapaEntidad
     {
 
         public int IdCompra { get; set; }
-        public Permiso oUsuario { get; set; }
+        public Usuario oUsuario { get; set; }
         public Proveedor oProveedor { get; set; }
         public string TipoDocumento { get; set; }
         public string NumeroDocumento { get; set; }
