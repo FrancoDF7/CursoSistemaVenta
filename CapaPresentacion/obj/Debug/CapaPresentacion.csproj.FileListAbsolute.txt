@@ -48,3 +48,9 @@ C:\Proyectos VS 2022\CursoSistemaVenta\CapaPresentacion\bin\Debug\System.Runtime
 C:\Proyectos VS 2022\CursoSistemaVenta\CapaPresentacion\obj\Debug\CapaPresentacion.frmNegocio.resources
 C:\Proyectos VS 2022\CursoSistemaVenta\CapaPresentacion\obj\Debug\CapaPresentacion.Modales.mdProveedor.resources
 C:\Proyectos VS 2022\CursoSistemaVenta\CapaPresentacion\obj\Debug\CapaPresentacion.Modales.mdProducto.resources
+C:\Proyectos VS 2022\CursoSistemaVenta\CapaPresentacion\obj\Debug\CapaPresentacion.frmDetalleCompra.resources
+C:\Proyectos VS 2022\CursoSistemaVenta\CapaPresentacion\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Proyectos VS 2022\CursoSistemaVenta\CapaPresentacion\bin\Debug\itextsharp.dll
+C:\Proyectos VS 2022\CursoSistemaVenta\CapaPresentacion\bin\Debug\itextsharp.xmlworker.dll
+C:\Proyectos VS 2022\CursoSistemaVenta\CapaPresentacion\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Proyectos VS 2022\CursoSistemaVenta\CapaPresentacion\bin\Debug\itextsharp.xml
