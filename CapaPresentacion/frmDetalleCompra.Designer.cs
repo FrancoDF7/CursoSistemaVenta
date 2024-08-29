@@ -46,6 +46,10 @@
             this.txtfecha = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.dgvdata = new System.Windows.Forms.DataGridView();
+            this.Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PrecioCompra = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SubTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label12 = new System.Windows.Forms.Label();
             this.txtmontotal = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -53,10 +57,6 @@
             this.btnlimpiar = new FontAwesome.Sharp.IconButton();
             this.btnbuscar = new FontAwesome.Sharp.IconButton();
             this.btndescargar = new System.Windows.Forms.Button();
-            this.Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PrecioCompra = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SubTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).BeginInit();
@@ -237,6 +237,34 @@
             this.dgvdata.Size = new System.Drawing.Size(555, 176);
             this.dgvdata.TabIndex = 33;
             // 
+            // Producto
+            // 
+            this.Producto.HeaderText = "Producto";
+            this.Producto.Name = "Producto";
+            this.Producto.ReadOnly = true;
+            this.Producto.Width = 114;
+            // 
+            // PrecioCompra
+            // 
+            this.PrecioCompra.HeaderText = "Precio Compra";
+            this.PrecioCompra.Name = "PrecioCompra";
+            this.PrecioCompra.ReadOnly = true;
+            this.PrecioCompra.Width = 113;
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.Name = "Cantidad";
+            this.Cantidad.ReadOnly = true;
+            this.Cantidad.Width = 114;
+            // 
+            // SubTotal
+            // 
+            this.SubTotal.HeaderText = "Sub Total";
+            this.SubTotal.Name = "SubTotal";
+            this.SubTotal.ReadOnly = true;
+            this.SubTotal.Width = 113;
+            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -319,34 +347,6 @@
             this.btndescargar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btndescargar.UseVisualStyleBackColor = true;
             this.btndescargar.Click += new System.EventHandler(this.btndescargar_Click);
-            // 
-            // Producto
-            // 
-            this.Producto.HeaderText = "Producto";
-            this.Producto.Name = "Producto";
-            this.Producto.ReadOnly = true;
-            this.Producto.Width = 114;
-            // 
-            // PrecioCompra
-            // 
-            this.PrecioCompra.HeaderText = "Precio Compra";
-            this.PrecioCompra.Name = "PrecioCompra";
-            this.PrecioCompra.ReadOnly = true;
-            this.PrecioCompra.Width = 113;
-            // 
-            // Cantidad
-            // 
-            this.Cantidad.HeaderText = "Cantidad";
-            this.Cantidad.Name = "Cantidad";
-            this.Cantidad.ReadOnly = true;
-            this.Cantidad.Width = 114;
-            // 
-            // SubTotal
-            // 
-            this.SubTotal.HeaderText = "Sub Total";
-            this.SubTotal.Name = "SubTotal";
-            this.SubTotal.ReadOnly = true;
-            this.SubTotal.Width = 113;
             // 
             // frmDetalleCompra
             // 

@@ -175,7 +175,7 @@
             // 
             // txtnombreproveedor
             // 
-            this.txtnombreproveedor.Location = new System.Drawing.Point(189, 38);
+            this.txtnombreproveedor.Location = new System.Drawing.Point(189, 37);
             this.txtnombreproveedor.Name = "txtnombreproveedor";
             this.txtnombreproveedor.ReadOnly = true;
             this.txtnombreproveedor.Size = new System.Drawing.Size(194, 20);
