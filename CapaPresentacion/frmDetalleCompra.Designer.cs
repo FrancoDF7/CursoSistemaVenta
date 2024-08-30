@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -51,7 +51,7 @@
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SubTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label12 = new System.Windows.Forms.Label();
-            this.txtmontotal = new System.Windows.Forms.TextBox();
+            this.txtmontototal = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtbusqueda = new System.Windows.Forms.TextBox();
             this.btnlimpiar = new FontAwesome.Sharp.IconButton();
@@ -210,14 +210,14 @@
             // 
             this.dgvdata.AllowUserToAddRows = false;
             this.dgvdata.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvdata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvdata.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Producto,
@@ -230,9 +230,9 @@
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.ReadOnly = true;
             this.dgvdata.RowHeadersWidth = 9;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvdata.RowTemplate.Height = 28;
             this.dgvdata.Size = new System.Drawing.Size(555, 176);
             this.dgvdata.TabIndex = 33;
@@ -275,14 +275,14 @@
             this.label12.TabIndex = 34;
             this.label12.Text = "Monto Total:";
             // 
-            // txtmontotal
+            // txtmontototal
             // 
-            this.txtmontotal.Location = new System.Drawing.Point(371, 425);
-            this.txtmontotal.Name = "txtmontotal";
-            this.txtmontotal.ReadOnly = true;
-            this.txtmontotal.Size = new System.Drawing.Size(92, 20);
-            this.txtmontotal.TabIndex = 10;
-            this.txtmontotal.Text = "0";
+            this.txtmontototal.Location = new System.Drawing.Point(371, 425);
+            this.txtmontototal.Name = "txtmontototal";
+            this.txtmontototal.ReadOnly = true;
+            this.txtmontototal.Size = new System.Drawing.Size(92, 20);
+            this.txtmontototal.TabIndex = 10;
+            this.txtmontototal.Text = "0";
             // 
             // label8
             // 
@@ -358,7 +358,7 @@
             this.Controls.Add(this.txtbusqueda);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btndescargar);
-            this.Controls.Add(this.txtmontotal);
+            this.Controls.Add(this.txtmontototal);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.dgvdata);
             this.Controls.Add(this.groupBox3);
@@ -393,7 +393,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dgvdata;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox txtmontotal;
+        private System.Windows.Forms.TextBox txtmontototal;
         private System.Windows.Forms.Button btndescargar;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;

@@ -9,7 +9,7 @@ namespace CapaEntidad
     public class Venta
     {
         public int IdVenta { get; set; }
-        public Permiso oUsuario { get; set; }
+        public Usuario oUsuario { get; set; }
         public string TipoDocumento { get; set; }
         public string NumeroDocumento { get; set; }
         public string DocumentoCliente { get; set; }

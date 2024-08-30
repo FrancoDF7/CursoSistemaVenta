@@ -14,7 +14,7 @@ namespace CapaNegocio
         //Instancia de la clase CD_Compra de la CapaDatos
         private CD_Compra objcd_compra = new CD_Compra();
 
-        //Retorna la lista obtenida del metodo Listar de la clase CD_Compra 
+        
         public int ObtenerCorrelativo()
         {
             return objcd_compra.ObtenerCorrelativo();

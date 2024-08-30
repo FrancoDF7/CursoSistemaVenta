@@ -55,3 +55,4 @@ C:\Proyectos VS 2022\CursoSistemaVenta\CapaPresentacion\bin\Debug\itextsharp.xml
 C:\Proyectos VS 2022\CursoSistemaVenta\CapaPresentacion\bin\Debug\BouncyCastle.Cryptography.xml
 C:\Proyectos VS 2022\CursoSistemaVenta\CapaPresentacion\bin\Debug\itextsharp.xml
 C:\Proyectos VS 2022\CursoSistemaVenta\CapaPresentacion\obj\Debug\CapaPresentacion.Modales.mdCliente.resources
+C:\Proyectos VS 2022\CursoSistemaVenta\CapaPresentacion\obj\Debug\CapaPresentacion.frmDetalleVenta.resources

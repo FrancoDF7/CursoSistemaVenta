@@ -46,7 +46,7 @@ namespace CapaPresentacion
                     dgvdata.Rows.Add(new object[] { dc.oProducto.Nombre, dc.PrecioCompra, dc.Cantidad, dc.MontoTotal });
                 }
 
-                txtmontotal.Text = oCompra.MontoTotal.ToString("0.00");
+                txtmontototal.Text = oCompra.MontoTotal.ToString("0.00");
 
             }
         }
@@ -60,7 +60,7 @@ namespace CapaPresentacion
             txtnombreproveedor.Text = "";
 
             dgvdata.Rows.Clear();
-            txtmontotal.Text = "0.00";
+            txtmontototal.Text = "0.00";
         }
 
         private void btndescargar_Click(object sender, EventArgs e)
@@ -101,7 +101,7 @@ namespace CapaPresentacion
             }
             Texto_Html = Texto_Html.Replace("@filas", filas);
 
-            Texto_Html = Texto_Html.Replace("@montototal", txtmontotal.Text);
+            Texto_Html = Texto_Html.Replace("@montototal", txtmontototal.Text);
 
 
             SaveFileDialog savefile = new SaveFileDialog();
