@@ -23,6 +23,11 @@ namespace CapaPresentacion
             InitializeComponent();
         }
 
+        private void frmDetalleCompra_Load(object sender, EventArgs e)
+        {
+            txtbusqueda.Select();
+        }
+
         //Muestra en los campos los datos de la compra, 
         //se corresponda con el numero de documento ingresado
         private void btnbuscar_Click(object sender, EventArgs e)
@@ -141,5 +146,7 @@ namespace CapaPresentacion
             }
 
         }
+
+
     }
 }
