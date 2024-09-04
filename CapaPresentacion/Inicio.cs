@@ -101,6 +101,11 @@ namespace CapaPresentacion
         {
              AbrirFormulario(menumantenedor, new frmProducto());
         }
+        private void submenunegocio_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(menumantenedor, new frmNegocio());
+        }
+
         #endregion
 
         #region MenuVentas
@@ -144,16 +149,21 @@ namespace CapaPresentacion
         #endregion
 
         #region MenuReportes
-        private void menureportes_Click(object sender, EventArgs e)
+
+        private void submenureportecompras_Click(object sender, EventArgs e)
         {
-            AbrirFormulario((IconMenuItem)sender, new frmReportes());
+            AbrirFormulario(menureportes, new frmReporteCompras());
+        }
+
+        private void submenureporteventas_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(menureportes, new frmReporteVentas());
         }
 
         #endregion
 
-        private void submenunegocio_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario(menumantenedor, new frmNegocio());
-        }
+
+
+
     }
 }
