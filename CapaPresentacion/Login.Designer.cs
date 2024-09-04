@@ -37,6 +37,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btningresar = new FontAwesome.Sharp.IconButton();
             this.btncancelar = new FontAwesome.Sharp.IconButton();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,7 +72,7 @@
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 96;
             this.iconPictureBox1.Location = new System.Drawing.Point(61, 26);
-            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(96, 104);
             this.iconPictureBox1.TabIndex = 2;
@@ -79,8 +80,8 @@
             // 
             // txtdocumento
             // 
-            this.txtdocumento.Location = new System.Drawing.Point(253, 44);
-            this.txtdocumento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtdocumento.Location = new System.Drawing.Point(253, 58);
+            this.txtdocumento.Margin = new System.Windows.Forms.Padding(2);
             this.txtdocumento.Name = "txtdocumento";
             this.txtdocumento.Size = new System.Drawing.Size(217, 20);
             this.txtdocumento.TabIndex = 3;
@@ -88,7 +89,7 @@
             // txtclave
             // 
             this.txtclave.Location = new System.Drawing.Point(253, 98);
-            this.txtclave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtclave.Margin = new System.Windows.Forms.Padding(2);
             this.txtclave.Name = "txtclave";
             this.txtclave.Size = new System.Drawing.Size(217, 20);
             this.txtclave.TabIndex = 4;
@@ -96,7 +97,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(250, 28);
+            this.label3.Location = new System.Drawing.Point(250, 42);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 13);
@@ -125,7 +126,7 @@
             this.btningresar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btningresar.IconSize = 20;
             this.btningresar.Location = new System.Drawing.Point(253, 136);
-            this.btningresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btningresar.Margin = new System.Windows.Forms.Padding(2);
             this.btningresar.Name = "btningresar";
             this.btningresar.Size = new System.Drawing.Size(91, 30);
             this.btningresar.TabIndex = 7;
@@ -147,7 +148,7 @@
             this.btncancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btncancelar.IconSize = 20;
             this.btncancelar.Location = new System.Drawing.Point(378, 136);
-            this.btncancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btncancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btncancelar.Name = "btncancelar";
             this.btncancelar.Size = new System.Drawing.Size(91, 30);
             this.btncancelar.TabIndex = 8;
@@ -157,12 +158,24 @@
             this.btncancelar.UseVisualStyleBackColor = false;
             this.btncancelar.Click += new System.EventHandler(this.btncancelar_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(249, 9);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(164, 24);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "INICIAR SESIÓN";
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(508, 182);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.btncancelar);
             this.Controls.Add(this.btningresar);
             this.Controls.Add(this.label4);
@@ -173,7 +186,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
@@ -195,5 +208,6 @@
         private System.Windows.Forms.Label label4;
         private FontAwesome.Sharp.IconButton btningresar;
         private FontAwesome.Sharp.IconButton btncancelar;
+        private System.Windows.Forms.Label label5;
     }
 }

@@ -36,8 +36,6 @@
             this.txtfechafin = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.cboproveedor = new System.Windows.Forms.ComboBox();
             this.btnbuscarresultado = new FontAwesome.Sharp.IconButton();
             this.label5 = new System.Windows.Forms.Label();
             this.dgvdata = new System.Windows.Forms.DataGridView();
@@ -61,6 +59,8 @@
             this.txtbusqueda = new System.Windows.Forms.TextBox();
             this.cbobusqueda = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cboproveedor = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).BeginInit();
             this.SuspendLayout();
             // 
@@ -127,25 +127,6 @@
             this.label3.Size = new System.Drawing.Size(57, 13);
             this.label3.TabIndex = 26;
             this.label3.Text = "Fecha Fin:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(413, 57);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 13);
-            this.label4.TabIndex = 27;
-            this.label4.Text = "Proveedor:";
-            // 
-            // cboproveedor
-            // 
-            this.cboproveedor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboproveedor.FormattingEnabled = true;
-            this.cboproveedor.Location = new System.Drawing.Point(478, 52);
-            this.cboproveedor.Name = "cboproveedor";
-            this.cboproveedor.Size = new System.Drawing.Size(179, 21);
-            this.cboproveedor.TabIndex = 28;
             // 
             // btnbuscarresultado
             // 
@@ -391,6 +372,25 @@
             this.label11.TabIndex = 58;
             this.label11.Text = "Buscar por:";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(413, 57);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(59, 13);
+            this.label4.TabIndex = 27;
+            this.label4.Text = "Proveedor:";
+            // 
+            // cboproveedor
+            // 
+            this.cboproveedor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboproveedor.FormattingEnabled = true;
+            this.cboproveedor.Location = new System.Drawing.Point(478, 52);
+            this.cboproveedor.Name = "cboproveedor";
+            this.cboproveedor.Size = new System.Drawing.Size(179, 21);
+            this.cboproveedor.TabIndex = 28;
+            // 
             // frmReporteCompras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -431,8 +431,6 @@
         private System.Windows.Forms.DateTimePicker txtfechafin;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox cboproveedor;
         private FontAwesome.Sharp.IconButton btnbuscarresultado;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView dgvdata;
@@ -456,5 +454,7 @@
         private System.Windows.Forms.TextBox txtbusqueda;
         private System.Windows.Forms.ComboBox cbobusqueda;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox cboproveedor;
     }
 }

@@ -13,6 +13,7 @@ using CapaEntidad;
 using FontAwesome.Sharp;
 //Referencia CapaNegocio
 using CapaNegocio;
+using CapaPresentacion.Modales;
 
 namespace CapaPresentacion
 {
@@ -160,10 +161,23 @@ namespace CapaPresentacion
             AbrirFormulario(menureportes, new frmReporteVentas());
         }
 
+
+
+
         #endregion
 
+        private void menuacercade_Click(object sender, EventArgs e)
+        {
+            mdAcercade md = new mdAcercade();
+            md.ShowDialog();
+        }
 
-
-
+        private void btnsalir_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Desea salir?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
     }
 }
